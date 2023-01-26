@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="RF style.css" type="text/css" />
+    <style>
+      .span {
+        font-style: italic;
+        font-weight: bold;
+      }
+      #heading {
+        font-weight: bolder;
+        font-size: 40px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <span id="heading">Registration Form</span><br />
+      <br />
+      <form>
+        <label for="details">Enter your details below</label> <br />
+        <li>
+          <input
+            type="email"
+            placeholder="Your_email@gmail.com"
+            required
+            id="details"
+          />
+        </li>
+        <li>
+          <input
+            type="password"
+            name="password"
+            id="details"
+            required
+            placeholder="Password"
+          />
+        </li>
+        <span class="span">!Type a complex password with 8-20 characters.</span>
+        <li><input type="text" placeholder="+20 Phone Number" required /></li>
+        <hr />
+        <span class="span">Enter your profession:</span>
+        <br />
+        <li>
+          <input type="radio" name="profession" class="rp" />Student &nbsp;
+          <input type="radio" name="profession" class="rp" />Teacher &nbsp;
+          <input type="radio" name="profession" class="rp" />Developer &nbsp;
+        </li>
+        <label for="student">Choose the stage if you are(Student)</label>
+        <select id="student">
+          <option value=""></option>
+          <option value="first primary">First primary</option>
+          <option value="plus12">Plus12</option>
+          <option value="bTech">BTech</option>
+        </select>
+        <hr />
+        <li>
+          Enter your Birth date.
+          <input type="date" style="list-style: circle" />
+        </li>
+        <hr />
+        <li>
+          <textarea
+            name="notes"
+            cols="30"
+            rows="1"
+            placeholder="Any notes"
+          ></textarea>
+        </li>
+        <hr />
+        <input type="submit" value="Submit" class="pad" />
+        <input type="reset" value="Reset" />
+      </form>
+    </div>
+  </body>
+</html>
